@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get Element by Class</title>
+  <style>
+    .menu{
+      padding: 5px 10px;
+      background-color: blue;
+      color: white;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      width: 150px;
+      text-align: center;
+    }
+    .menu_active{
+      padding: 5px 10px;
+      background-color: red;
+      color: white;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      width: 150px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li class="menu">MENU 1</li>
+  <li class="menu">MENU 2</li>
+  <li class="menu">MENU 3</li>
+  <li class="menu">MENU 4</li>
+  <li class="menu">MENU 5</li>
+</ul>
+<script>
+  var elements = document.getElementsByClassName('menu');
+  var el = elements[2];
+  el.className = 'menu_active';
+</script>
+</body>
+</html>
